@@ -2,7 +2,7 @@
 import React from 'react';
 
 const CopyLink = ({ link }) => {
-    const fullUrl = `http://localhost:3000${link}`;
+    const fullUrl = `https://msmayank250-gmail-com-cuvette-final.onrender.com${link}`;
   const copyToClipboard = () => {
     navigator.clipboard.writeText(fullUrl)
       .then(() => alert('Link copied to clipboard!'))
