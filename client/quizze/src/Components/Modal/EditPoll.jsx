@@ -12,7 +12,7 @@ const EditPoll = ({ isOpen, onClose, quizName, quizId, selectedQuizType }) => {
     useEffect(() => {
         const fetchQuizData = async () => {
           try {
-            const response = await axios.get(`http://localhost:5001/quiz/${quizId}`);
+            const response = await axios.get(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizId}`);
             const quizData = response.data;
     
             // Populate state with fetched data
@@ -98,7 +98,7 @@ const EditPoll = ({ isOpen, onClose, quizName, quizId, selectedQuizType }) => {
                 }))
             });
 
-            const response = await axios.patch(`http://localhost:5001/quiz/${quizId}/updateEdit`, {
+            const response = await axios.patch(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizId}/updateEdit`, {
                 quizName,
                 selectedQuizType,
                 questions: filteredQuestions.map(q => ({
