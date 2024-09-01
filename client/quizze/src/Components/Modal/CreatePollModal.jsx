@@ -112,7 +112,7 @@ const CreatePollModal = ({ isOpen, onClose, quizName, selectedQuizType }) => {
         }
             const filteredQuestions = questions.filter(q => q.id <= selectedQuestionNumber);
 
-            const response = await axios.post('http://localhost:5001/quiz/create', {
+            const response = await axios.post('https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/create', {
                 quizName,
                 selectedQuizType,
                 questions: filteredQuestions.map(q => ({
