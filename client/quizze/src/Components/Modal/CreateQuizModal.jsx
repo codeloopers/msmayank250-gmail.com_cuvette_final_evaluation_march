@@ -175,7 +175,7 @@ const CreateQuizModal = ({ isOpen, onClose, quizName, selectedQuizType }) => {
         );
 
 
-        const response = await axios.post("http://localhost:5001/quiz/create", {
+        const response = await axios.post("https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/create", {
             quizName,
             selectedQuizType,
             questions: filteredQuestions.map((q) => ({
