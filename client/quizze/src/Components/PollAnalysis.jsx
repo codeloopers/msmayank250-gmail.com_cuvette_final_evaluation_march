@@ -10,11 +10,11 @@ const PollAnalysis = ({ quizId, quizName }) => {
     useEffect(() => {
         const fetchQuizAnalysis = async () => {
             try {
-                const response = await axios.get(`http://localhost:5001/poll/${quizId}/analysis`);
+                const response = await axios.get(`https://msmayank250-gmail-com-cuvette-final.onrender.com/poll/${quizId}/analysis`);
 
                 setAnalysisData(response.data);
 
-                const data = await axios.get(`http://localhost:5001/quiz/${quizId}`);
+                const data = await axios.get(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizId}`);
                 setImpression(data.data.viewCount);
 
                 const date = new Date(data.data.createdAt);
