@@ -53,7 +53,7 @@ const Signup = () => {
       return;
     }
     try {
-        const res = await axios.post('http://localhost:5001/users/signup', { email, name, password });
+        const res = await axios.post('https://msmayank250-gmail-com-cuvette-final.onrender.com/users/signup', { email, name, password });
   
     
         if (res.data.status === 'Success') {
