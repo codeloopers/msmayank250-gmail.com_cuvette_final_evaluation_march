@@ -1,0 +1,28 @@
+.result-container{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.result-container h2{
+    font-size: 40px;
+}
+.trophy{
+    height: 300px;
+    width: 320px;
+    
+}
+
+.result{
+    font-size: 40px;
+}
+.result span{
+color: #60B84B;
+font-size: 40px;
+}

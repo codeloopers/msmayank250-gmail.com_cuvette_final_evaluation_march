@@ -1,0 +1,19 @@
+.poll-image{
+    width: 95%;
+  height: 100px;
+  position: relative;
+  left: 10px;
+}
+.card_answers1 {
+    background-color: white;
+    width: 250px;
+    height: 89px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

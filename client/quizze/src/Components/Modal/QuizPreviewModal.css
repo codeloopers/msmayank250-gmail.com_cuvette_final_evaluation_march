@@ -1,0 +1,44 @@
+.titleshare{
+    align-items: center;
+    font-family: Poppins;
+font-size: 30px;
+line-height: 58.5px;
+text-align: center;
+
+}
+.link-container{
+    display: flex;
+    align-items: center;
+    width: 675px;
+height: 60px;
+border-radius: 10px 0px 0px 0px;
+background: #EDEDED;
+position: relative;
+  left: 50px;
+
+}
+.copy{
+    width: 100%;
+    width: 120vh;
+  height: 50px;
+  align-items: center;
+  display: flex;
+}
+
+.shareBtn{
+    width: 100px;
+    height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.buttoncancel{
+    display: flex;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}

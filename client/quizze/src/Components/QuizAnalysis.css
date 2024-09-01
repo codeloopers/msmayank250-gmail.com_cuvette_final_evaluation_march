@@ -1,0 +1,66 @@
+.quiz-analysis-container {
+    padding: 20px;
+    width: 80%;
+}
+.quiz-analysis-container h1{
+    color: #5076FF;
+    
+}
+
+.question-section {
+    margin-bottom: 20px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card_answers {
+    background-color: white;
+    width: 250px;
+    height: 89px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+.line{
+  width: 100%;
+  border: #5076FF;
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #D7D7D7
+}
+
+.header-title{
+    display: flex;
+    justify-content: space-between;
+}
+.createdOn{
+    color: #FF5D01;
+    
+    font-size: 15px;
+}
+.impressionAnalysis{
+    color: #FF5D01;
+  
+    font-size: 15px;
+}
+
+
