@@ -16,7 +16,7 @@ const PollUI = () => {
         if (!quizID) {
           throw new Error('Quiz ID is undefined');
         }
-        const response = await axios.get(`http://localhost:5001/quiz/${quizID}`);
+        const response = await axios.get(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizID}`);
         setQuiz(response.data);
       } catch (error) {
         console.error('Error fetching quiz:', error);
@@ -29,7 +29,7 @@ const PollUI = () => {
   useEffect(() => {
     const countIncrease = async () => {
       try {
-        await axios.patch(`http://localhost:5001/quiz/${quizID}/incrementViewCount`);
+        await axios.patch(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizID}/incrementViewCount`);
       } catch (error) {
         console.log(error);
       }
@@ -45,7 +45,7 @@ const PollUI = () => {
         return newSelectedOptions;
       });
 
-      await axios.patch(`http://localhost:5001/quiz/${quizID}/questions/${questionIndex}/options/${optionId}/incrementCount`);
+      await axios.patch(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizID}/questions/${questionIndex}/options/${optionId}/incrementCount`);
     } catch (error) {
       console.error('Error updating option count:', error);
     }
