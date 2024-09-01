@@ -28,7 +28,7 @@ const Dashboard = () => {
 
         // Fetch data for quiz counts and impressions
         const quizzesResponse = await axios.get(
-          "http://localhost:5001/quiz/getQuizData",
+          "https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/getQuizData",
           {
             headers: { Authorization: `Bearer ${token}` }, // Include token in headers
           }
@@ -52,7 +52,7 @@ const Dashboard = () => {
 
         // Fetch data for quizzes to display below the cards
         const quizzesNewResponse = await axios.get(
-          "http://localhost:5001/quizzes",
+          "https://msmayank250-gmail-com-cuvette-final.onrender.com/quizzes",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
