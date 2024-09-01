@@ -19,7 +19,7 @@ const QuizUI = () => {
           throw new Error('Quiz ID is undefined');
         }
         // Fetch the quiz data
-        const response = await axios.get(`http://localhost:5001/quiz/${quizID}`);
+        const response = await axios.get(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizID}`);
         setQuiz(response.data);
 
         // Initialize timer based on quiz settings if needed
@@ -37,7 +37,7 @@ const QuizUI = () => {
   useEffect(() => {
     const countIncrease = async () => {
       try {
-        const count = await axios.patch(`http://localhost:5001/quiz/${quizID}/incrementViewCount`);
+        const count = await axios.patch(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizID}/incrementViewCount`);
 
       } catch (error) {
         console.log(error);
@@ -108,7 +108,7 @@ const QuizUI = () => {
       };
   
   
-      const response = await axios.patch(`http://localhost:5001/quiz/${quizID}/update`, resultData);
+      const response = await axios.patch(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizID}/update`, resultData);
   
   
       setResult(resultData);
