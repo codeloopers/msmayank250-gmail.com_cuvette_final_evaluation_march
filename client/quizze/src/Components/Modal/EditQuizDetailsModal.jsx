@@ -12,7 +12,7 @@ const EditQuizDetailsModal = ({ isOpen, onClose, quizId }) => {
   useEffect(() => {
     if (quizId) {
       axios
-        .get(`http://localhost:5001/quiz/${quizId}`)
+        .get(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizId}`)
         .then((response) => {
           const quizData = response.data;
           console.log(quizData);
