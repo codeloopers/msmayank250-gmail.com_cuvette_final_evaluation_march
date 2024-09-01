@@ -23,7 +23,7 @@ const Analytics = () => {
                     throw new Error('No authentication token found');
                 }
 
-                const response = await axios.get(`http://localhost:5001/quizzes`, {
+                const response = await axios.get(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quizzes`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const data = response.data.quizzes || [];
@@ -39,7 +39,7 @@ const Analytics = () => {
 
     const handleDelete = async (quizId) => {
         try {
-            await axios.delete(`http://localhost:5001/quiz/${quizId}`);
+            await axios.delete(`https://msmayank250-gmail-com-cuvette-final.onrender.com/quiz/${quizId}`);
             setQuizzes(quizzes.filter(quiz => quiz._id !== quizId));
         } catch (error) {
             console.error('Error deleting quiz:', error);
