@@ -20,8 +20,9 @@ app.use(express.json());
 const url = `https://msmayank250-gmail-com-cuvette-final.onrender.com/`; // Replace with your Render URL
 const interval = 30000; // Interval in milliseconds (30 seconds)
 
-function reloadWebsite = async (req,res) {
-  try{await axios.get(url)
+const reloadWebsite = async (req,res) {
+  try{
+    await axios.get(url)
     .then(response => {
       console.log(`Reloaded at ${new Date().toISOString()}: Status Code ${response.status}`);
     })
