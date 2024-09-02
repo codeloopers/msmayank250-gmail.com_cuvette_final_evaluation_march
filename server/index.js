@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 //To countinue backend server dont go on downtime ---Ignore this request
-const url = `https://msmayank250-gmail-com-cuvette-final.onrender.com/`; // Replace with your Render URL
+const url = `https://msmayank250-gmail-com-cuvette-final.onrender.com/test`; // Replace with your Render URL
 const interval = 30000; // Interval in milliseconds (30 seconds)
 
 const reloadWebsite = async (req,res) =>{
@@ -36,6 +36,10 @@ const reloadWebsite = async (req,res) =>{
 }
 
 setInterval(reloadWebsite, interval);
+
+app.get('/test', (req, res) => {
+  res.json({ message: 'This is a test response' });
+});
 
 const isUserLoggedin = (req, res, next) => {
     if (req.user && req.user.id) {
