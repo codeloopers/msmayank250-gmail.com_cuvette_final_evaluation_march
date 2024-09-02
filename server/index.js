@@ -15,6 +15,23 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 
+//To countinue backend server dont go on downtime ---Ignore this request
+const url = `https://msmayank250-gmail-com-cuvette-final.onrender.com/`; // Replace with your Render URL
+const interval = 30000; // Interval in milliseconds (30 seconds)
+
+function reloadWebsite() {
+  axios.get(url)
+    .then(response => {
+      console.log(`Reloaded at ${new Date().toISOString()}: Status Code ${response.status}`);
+    })
+    .catch(error => {
+      console.error(`Error reloading at ${new Date().toISOString()}:`, error.message);
+    });
+}
+
+
+setInterval(reloadWebsite, interval);
+
 const isUserLoggedin = (req, res, next) => {
     if (req.user && req.user.id) {
         next();
