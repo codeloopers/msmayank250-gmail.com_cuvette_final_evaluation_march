@@ -10,6 +10,7 @@ const User = require('../server/Schema/UserSchema')
 const Quiz = require('../server/Schema/QuizSchemaModel')
 dotenv.config();
 const Auth = require('../server/MiddleWare/Auth')
+const axios = require('axios')
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
