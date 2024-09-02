@@ -226,4 +226,6 @@ body{
     margin-top: 100px;
     color: #474444;
   }
-  .logout{}
+  .logout{
+      curser:pointer;
+  }
