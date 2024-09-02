@@ -161,6 +161,8 @@ body{
   .span-line{
     width: 120px;
     border: 1px solid black;
+      position:absolute;
+      bottom:40px;
   }
 
   .quizzes-list {
