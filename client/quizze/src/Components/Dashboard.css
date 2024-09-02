@@ -170,8 +170,7 @@ body{
     flex-wrap: wrap; 
     gap: 20px; 
     margin-left: 70px;
-    overflow-Y: auto;
-    height: 500px;
+    height: 100px;
     width: 100%;
     margin-left: 150px;
   }
