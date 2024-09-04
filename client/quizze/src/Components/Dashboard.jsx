@@ -120,21 +120,22 @@ const Dashboard = () => {
             </div>
             <h1 className="trending">Trending Quizs</h1>
             <div className="quizzes-list">
-              {quizzes.map((quiz) => (
-                <div key={quiz._id} className="quiz-item">
-                  <div className="card-data">
-                    <h3>{quiz.quizName}</h3>
-                    <div className="info-container">
-                      <p>{quiz.viewCount}</p>
-                      <img src={eye} alt="" />
-                    </div>
-                  </div>
+              .filter(quiz => quiz.viewCount >= 10) 
+  .map((quiz) => (
+    <div key={quiz._id} className="quiz-item">
+      <div className="card-data">
+        <h3>{quiz.quizName}</h3>
+        <div className="info-container">
+          <p>{quiz.viewCount}</p>
+          <img src={eye} alt="" />
+        </div>
+      </div>
 
-                  <p className="created">
-                    Created on: {new Date(quiz.createdAt).toLocaleDateString()}
-                  </p>
-                </div>
-              ))}
+      <p className="created">
+        Created on: {new Date(quiz.createdAt).toLocaleDateString()}
+      </p>
+    </div>
+  ))}
             </div>
           </div>
         );
