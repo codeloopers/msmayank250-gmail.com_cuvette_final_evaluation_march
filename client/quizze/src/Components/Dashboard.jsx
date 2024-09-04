@@ -121,7 +121,7 @@ const Dashboard = () => {
             <h1 className="trending">Trending Quizs</h1>
             <div className="quizzes-list">
               {quizzes
-                .filter((quiz) => quiz.viewCount >= 10) /
+                .filter((quiz) => quiz.viewCount >= 10) 
                 .map((quiz) => (
                   <div key={quiz._id} className="quiz-item">
                     <div className="card-data">
